@@ -1,0 +1,72 @@
+.container-star-img {
+  /* background-color: var(--Light-Grey); */
+  background-color: hsl(216, 9%, 22%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-star-img > img {
+  width: 15px;
+  height: 15px;
+}
+h1 {
+  color: white;
+}
+p {
+  color: #80848a;
+}
+.container-info{
+  font-size: 15px;
+}
+.stars-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.stars-btn-container > button {
+  background-color: #262f38;
+  color: #8b939d;
+  border-radius: 15px;
+  width: 2rem;
+  height: 2rem;
+  font-size: .8rem;
+}
+.stars-btn-container > button:hover {
+  background-color: var(--Orange);
+}
+.stars-btn-container > button.active{
+    background-color: white;
+}
+.btn-submit {
+  background-color: var(--Orange);
+  border-radius: 15px;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn-submit-disabled{
+  background-color: #8b939d;
+  border-radius: 15px;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btn-submit-disabled:hover{
+  cursor: default;
+}
+
+.btn-submit:hover {
+  background-color: white;
+}
+
+
+.alert-score{
+  text-align: center;
+  color: rgb(231, 116, 116);
+}

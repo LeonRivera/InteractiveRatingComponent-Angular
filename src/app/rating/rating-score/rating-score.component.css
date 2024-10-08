@@ -1,0 +1,19 @@
+.score-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.rating-p{
+    color: #e2874e;
+    background-color: #262F38;
+    padding: .4rem 1.2rem;
+    
+    border-radius: 15px;
+    font-size: 13px;
+}
+.rating-info{
+    margin-top: 0rem;
+    text-align: center;
+    color: #9AA1AB;
+}

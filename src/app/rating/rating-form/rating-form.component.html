@@ -1,0 +1,17 @@
+<div class="container-star-img">
+    <img src="assets/icon-star.svg" alt="">
+</div>
+<h1>How did we do?</h1>
+<p class="container-info">Please let us know how we did with your support
+    request. All feedback is appreciated to help us
+    improve our offering!
+</p>
+<div class="stars-btn-container">
+    <button [ngClass]="setActiveClass(1) ? 'active':''" (click)="activeButton(1)">1</button>
+    <button [ngClass]="setActiveClass(2) ? 'active':''" (click)="activeButton(2)">2</button>
+    <button [ngClass]="setActiveClass(3) ? 'active':''" (click)="activeButton(3)">3</button>
+    <button [ngClass]="setActiveClass(4) ? 'active':''" (click)="activeButton(4)">4</button>
+    <button [ngClass]="setActiveClass(5) ? 'active':''" (click)="activeButton(5)">5</button>
+</div>
+<button [disabled]="btnStarActive.id == 0" [ngClass]="btnStarActive.id == 0 ? 'btn-submit-disabled' : 'btn-submit'" routerLink="score" [queryParams]="{stars: btnStarActive.id}">SUBMIT</button>
+<p class="alert-score" *ngIf="btnStarActive.active == false">Please select a score!</p>
